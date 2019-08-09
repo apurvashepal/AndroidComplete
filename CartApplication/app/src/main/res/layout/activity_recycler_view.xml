@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopview"
+   >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/color_text_register"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+
+       />
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/toolbar_message"
+            android:textColor="@color/color_text_register"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="180dp"
+            android:clickable="true"
+            android:id="@+id/shoppingcart"
+            android:src="@drawable/shoppingcart"
+            android:scaleType="fitXY"
+            android:background="@color/toolbar_color"
+            android:focusable="true"
+            android:visibility="visible"
+            android:layout_marginStart="180dp"
+            android:contentDescription="TODO" />
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="180dp"
+            android:clickable="true"
+            android:id="@+id/logout"
+            android:text="Log out"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:background="@color/toolbar_color"
+            android:focusable="true"
+            android:layout_marginStart="180dp"
+            android:contentDescription="TODO" />
+    </Toolbar>
+    <TextView
+        android:background="@drawable/app_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cart_total"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:text="Cart Total: "
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+</FrameLayout>

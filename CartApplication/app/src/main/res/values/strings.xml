@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">CartApplication</string>
+
+
+    <string name="string_reg">Registration</string>
+    <string name="string_reg_info">Personal info</string>
+    <string name="st_name">Name</string>
+    <string name="st_gender">Gender</string>
+    <string name="st_male">Male</string>
+    <string name="st_female">Female</string>
+    <string name="st_age">Age</string>
+    <string name="st_contact">Contact</string>
+    <string name="st_password">       Password</string>
+
+    <string name="st_address">Address</string>
+    <string name="st_state">State</string>
+    <string name="st_Country">Country</string>
+    <string name="st_district">District</string>
+    <string name="st_gram">Grampanchayat</string>
+    <string name="st_village">Village</string>
+    <string name="st_aadhar">Aadhar Number</string>
+    <string name="st_imei1">IMEI1</string>
+    <string name="st_imei2">IMEI2</string>
+    <string name="st_signup">Sign Up</string>
+
+
+    <!-- Login page-->
+    <string name="st_welcome">WELCOME BACK</string>
+    <string name="st_login_message">Please log in to get Started</string>
+    <string name="st_signin">SIGN IN</string>
+    <string name="st_rem_password">Remember Password</string>
+    <string name="st_acc_message">Don\'t have an account? </string>
+    <string name="st_space">     </string>
+    <string name="permission_read_phone_state_rationale">Give Permission</string>
+
+
+    <string-array name="country_array" >
+        <item>India</item>
+        <item>ShriLanka</item>
+    </string-array>
+
+    <string-array name="state_array_India">
+        <item>Andaman and Nicobar Islands</item>
+        <item> Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+
+    </string-array>
+
+
+    <string-array name="state_array_ShriLanka">
+        <item>Anuradhapura</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Dambulla</item>
+        <item> Dehiwala-Mount Lavinia</item>
+        <item>Galle</item>
+        <item> Jaffna</item>
+        <item>Kalmunai</item>
+        <item> Kandy</item>
+        <item>Katunayake</item>
+        <item>Kolonnawa</item>
+        <item> Moratuwa</item>
+        <item>Negombo</item>
+        <item>Ratnapura</item>
+        <item> Sri Jayawardenapura Kotte</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+    <string name="d_title">Invalid Input</string>
+    <string name="d_message">Please check you have entered correct data</string>
+    <string name="toolbar_message">Shopping Cart</string>
+</resources>

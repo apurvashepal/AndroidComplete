@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_lay">
+ <fragment
+        android:id="@+id/master_list_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.cartapplication.UI.Fragment.RegisterFragment"
+      >
+    </fragment>
+    <fragment
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.cartapplication.UI.Fragment.LoginFragment"
+        >
+    </fragment>
+
+</FrameLayout>
+
+

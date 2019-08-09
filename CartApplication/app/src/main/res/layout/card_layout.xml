@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/border">
+
+    <ImageView
+        android:id="@+id/b_icon"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/star"
+        android:foregroundGravity="center"
+        />
+    <TextView
+        android:id="@+id/b_name"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/b_icon"
+        android:clickable="true"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/b_price"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/b_name"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@id/b_icon"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b_quantity"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@id/b_price"
+        android:text="Quantity"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b_price_total"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="51dp"
+        android:layout_toRightOf="@id/b_quantity"
+        android:text="Toatal Price"
+        android:textAlignment="center" />
+</RelativeLayout>
