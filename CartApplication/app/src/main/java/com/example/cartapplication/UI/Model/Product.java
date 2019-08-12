@@ -3,11 +3,19 @@ package com.example.cartapplication.UI.Model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Product extends Cart implements Parcelable{
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "Product")
+public class Product  implements Parcelable{
+    @PrimaryKey
     private int id;
+    @ColumnInfo(name = "image")
     private int image;
+    @ColumnInfo(name ="Name")
     private String Name;
+    @ColumnInfo(name = "Price")
     private int price;
 
   public   Product(){

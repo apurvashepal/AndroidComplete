@@ -14,7 +14,8 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cartapplication.R;
-import com.example.cartapplication.UI.Fragment.ProductFragment;
+import com.example.cartapplication.UI.Application.MyApplication;
+import com.example.cartapplication.UI.Database.ProductRepository;
 import com.example.cartapplication.UI.Model.Cart;
 import com.example.cartapplication.UI.Model.Product;
 import com.example.cartapplication.UI.Product.IProductOperations;
@@ -70,9 +71,13 @@ public class ProductAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 @Override
                 public void onClick(View view) {
                     Product productAdd =productList.get(position);
-                    productAddListener= new ProductFragment();
-                    productAddListener.IAddtoCart(productAdd);
-                    productList.add(product);
+                    //productAddListener= new ProductFragment();
+                    //productAddListener.IAddtoCart(productAdd);
+                    //productList.add(product);
+                    ProductRepository productRepository = new ProductRepository((MyApplication) MyApplication.getContext()){};
+                    //productRepository.updateTask(product);
+
+
                     //Toast.makeText(mContext, "You have clicked" + product.getName() , Toast.LENGTH_SHORT).show();
 
                 }

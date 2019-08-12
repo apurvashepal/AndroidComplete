@@ -18,7 +18,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.cartapplication.R;
 import com.example.cartapplication.UI.Activity.Aunthentication;
 import com.example.cartapplication.UI.Adapter.ShopAdapter;
+import com.example.cartapplication.UI.Application.MyApplication;
 import com.example.cartapplication.UI.Application.Preferences;
+import com.example.cartapplication.UI.Database.ProductRepository;
 import com.example.cartapplication.UI.Model.Cart;
 import com.example.cartapplication.UI.Model.Product;
 
@@ -46,13 +48,15 @@ public class ShoppingCartFragment extends Fragment implements View.OnClickListen
     private void initView(View mShoppingView) {
 
         //check if list is null then return
-         productFound(productList);
+         //productFound(productList);
 
         // getCartItems(productsList) -> Map<Products, Integer>
+         ProductRepository productRepository = new ProductRepository((MyApplication) MyApplication.getContext()){};
+          productList = productRepository.getAll();
          createHashmap(productList);
         // getCartItems() -> List<CartItems> -> Map loop
 
-         cartlist = getCartItems();
+        cartlist  = getCartItems();
         //Recycleriew CartItems ShoppingAdapter
 
         RecyclerView mShopcartList = mShoppingView.findViewById(R.id.recyclerView);
